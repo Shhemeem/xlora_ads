@@ -1,4 +1,4 @@
-/*
+ /*
 
 TemplateMo 570 Chain App Dev
 
@@ -207,7 +207,7 @@ body {
 .white-button a {
   display: inline-block !important;
   padding: 10px 20px !important;
-  color: #4b8ef1 !important;
+  color: #6f4bf1 !important;
   text-transform: capitalize;
   font-size: 15px;
   background-color: #fff;
@@ -301,7 +301,7 @@ header
 
 .background-header .logo,
 .background-header .main-nav .nav li a {
-  color: #fff;
+  color: #bd7d7d;
 }
 
 .background-header .main-nav .nav li:hover a {
@@ -341,6 +341,7 @@ header
   -o-transition: all .5s ease 0s;
   transition: all .5s ease 0s;
 }
+
 
 .header-area .main-nav {
   min-height: 80px;
@@ -386,12 +387,12 @@ header
 }
 
 .header-area .main-nav .nav li {
-  padding-left: 20px;
+  padding-left: 10px;
   padding-right: 20px;
 }
 
 .header-area .main-nav .nav li:nth-child(6) {
-  padding-right: 0px;
+  padding-right: 10px;
   padding-left: 40px;
 }
 
@@ -407,7 +408,7 @@ header
 .background-header .main-nav .nav li:last-child a:hover,
 .header-area .main-nav .nav li:nth-child(6) a:hover ,
 .background-header .main-nav .nav li:nth-child(6) a:hover {
-  color: #fff !important;
+  color: #4b8ef1 !important;
 }
 
 .header-area .main-nav .nav li a {
@@ -432,7 +433,7 @@ header
 }
 
 .header-area .main-nav .nav li:last-child a.active {
-  color: #fff !important;
+  color: #4b8ef1 !important;
 }
 
 .background-header .main-nav .nav li:hover a,
@@ -741,7 +742,7 @@ header
   }
   .header-area .main-nav .nav li a:hover {
     background: #eee !important;
-    color: #4b8ef1!important;
+    color: #1a488f!important;
   }
   .header-area .main-nav .nav li.submenu ul {
     position: relative;
@@ -855,7 +856,7 @@ preloader
     height: 16px;
     top: 12px;
     left: 15px;
-    background: #4b8ef1;
+    background: #082948;
     border-radius: 50%;
     -webkit-transform: translateX(0);
     transform: translateX(0);
@@ -878,7 +879,7 @@ preloader
     width: 16px;
     height: 16px;
     margin-left: 16px;
-    background: #4b8ef1;
+    background: #082948;
     border-radius: 50%;
 }
 
@@ -990,7 +991,7 @@ Services Style
 
 .services:before {
   content: '';
-  background-image: url(../images/services-right-dec.png);
+  background-image: url(../images/service-right-dc.png);
   background-repeat: no-repeat;
   position: absolute;
   right: 0;
@@ -1231,7 +1232,7 @@ The Clients
 .the-clients .naccs .menu div.active i,
 .the-clients .naccs .menu div.active span.rating,
 .the-clients .naccs .menu div.active .thumb {
-  color: #4b8ef1;
+  color: #082948;
 }
 
 .the-clients ul.nacc {
@@ -1270,7 +1271,7 @@ The Clients
 
 .the-clients .nacc .thumb .client-content {
   padding: 60px 30px;
-  background-image: url(../images/client-bg.png);
+  background-image: url(../images/client-bg.jpg);
   background-size: cover;
   border-radius: 50px;
   width: 100%;
