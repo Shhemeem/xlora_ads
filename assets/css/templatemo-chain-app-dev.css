@@ -187,7 +187,7 @@ body {
 
 .section-heading h4 em {
   font-style: normal;
-  color: #4b8ef1;
+  color: #ff7b00;
 }
 
 .section-heading img {
@@ -244,11 +244,11 @@ body {
 .gradient-button a {
   display: inline-block !important;
   padding: 10px 20px !important;
-  color: #fff !important;
+  color: #ffffff !important;
   text-transform: capitalize;
   font-size: 15px;
-  background: rgb(19,175,240);
-  background: linear-gradient(105deg, rgba(91,104,235,1) 0%, rgba(40,225,253,1) 100%);
+  background: rgb(255, 253, 253);
+  background: linear-gradient(105deg, rgb(5, 12, 104) 0%, rgb(16, 131, 148) 100%);
   border-radius: 23px;
   font-weight: 500 !important;
   letter-spacing: 0.3px !important;
@@ -256,16 +256,16 @@ body {
 }
 
 .gradient-button a:hover {
-  color: #fff !important;
-  background: rgb(19,175,240);
-  background: linear-gradient(105deg, rgba(91,104,235,1) 0%, rgba(40,225,253,1) 100%);
+  color: #ffffff !important;
+  background: rgb(255, 255, 255);
+  background: linear-gradient(105deg, #ffae00 100%);
 }
 
 .border-button a {
   display: inline-block !important;
   padding: 10px 20px !important;
   color: #4b8ef1 !important;
-  border: 1px solid #4b8ef1;
+  border: 1px solid #0267f5;
   text-transform: capitalize;
   font-size: 15px;
   display: inline-block;
@@ -301,11 +301,11 @@ header
 
 .background-header .logo,
 .background-header .main-nav .nav li a {
-  color: #bd7d7d;
+  color: #082948;
 }
 
 .background-header .main-nav .nav li:hover a {
-  color: #4b8ef1;
+  color: #223858;
 }
 
 .background-header .nav li a.active {
@@ -317,7 +317,7 @@ header
   position: absolute;
   width: 100%;
   height: 1px;
-  background-color: #4b8ef1;
+  background-color: #ff7b00;
   content: '';
   left: 50%;
   bottom: -20px;
@@ -408,14 +408,14 @@ header
 .background-header .main-nav .nav li:last-child a:hover,
 .header-area .main-nav .nav li:nth-child(6) a:hover ,
 .background-header .main-nav .nav li:nth-child(6) a:hover {
-  color: #4b8ef1 !important;
+  color: #082948 !important;
 }
 
 .header-area .main-nav .nav li a {
   display: block;
   font-weight: 500;
   font-size: 15px;
-  color: #2a2a2a;
+  color: #082948;
   text-transform: capitalize;
   -webkit-transition: all 0.3s ease 0s;
   -moz-transition: all 0.3s ease 0s;
@@ -429,16 +429,16 @@ header
 
 .header-area .main-nav .nav li:hover a,
 .header-area .main-nav .nav li a.active {
-  color: #4b8ef1!important;
+  color: #ff7b00!important;
 }
 
 .header-area .main-nav .nav li:last-child a.active {
-  color: #4b8ef1 !important;
+  color: #fefefe !important;
 }
 
 .background-header .main-nav .nav li:hover a,
 .background-header .main-nav .nav li a.active {
-  color: #4b8ef1!important;
+  color: #ff7b00!important;
   opacity: 1;
 }
 
@@ -499,8 +499,8 @@ header
 }
 
 .header-area .main-nav .nav li.submenu ul li a:hover {
-  background: #fff;
-  color: #092146!important;
+  background: #ffffff;
+  color: #184d9d!important;
   padding-left: 25px;
 }
 
@@ -532,6 +532,7 @@ header
 .background-header .main-nav .menu-trigger {
   top: 23px;
 }
+
 
 .header-area .main-nav .menu-trigger span,
 .header-area .main-nav .menu-trigger span:before,
@@ -890,6 +891,9 @@ preloader
 Banner Style
 --------------------------------------------- 
 */
+.logo{
+  width: 85px;
+}
 
 .main-banner {
   background-repeat: no-repeat;
