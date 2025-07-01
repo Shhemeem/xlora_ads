@@ -194,7 +194,45 @@ $(function() {
       }
     });
   }
+document.getElementById('contactForm').addEventListener('submit', function(e) {
+    e.preventDefault();
+    
+    // Get form values
+    const name = document.getElementById('name').value;
+    const email = document.getElementById('email').value;
+    const message = document.getElementById('message').value;
+    
+    // Simple validation
+    if (!name || !email || !message) {
+        showStatus('Please fill in all fields', 'error');
+        return;
+    }
+    
+    // Validate email format
+    if (!validateEmail(email)) {
+        showStatus('Please enter a valid email address', 'error');
+        return;
+    }
+    
+    // Here you would typically send the data to a server
+    // For this example, we'll just show a success message
+    console.log('Form submitted:', { name, email, message });
+    showStatus('Message sent successfully!', 'success');
+    
+    // Reset form
+    document.getElementById('contactForm').reset();
+});
 
+function showStatus(message, type) {
+    const statusElement = document.getElementById('statusMessage');
+    statusElement.textContent = message;
+    statusElement.className = type;
+}
+
+function validateEmail(xloraads@gmail.com) {
+    const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return re.test(xloraads@gmail.com);
+}
 
 
 
