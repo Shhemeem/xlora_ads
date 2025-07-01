@@ -190,4 +190,32 @@ wow = new WOW(
     offset: 50
   }
 );
+
+
+
+// animation.js
+
+document.addEventListener('DOMContentLoaded', function () {
+  const cards = document.querySelectorAll('.pricing-card');
+
+  cards.forEach(card => {
+    card.addEventListener('click', () => {
+      cards.forEach(c => c.classList.remove('active'));
+      card.classList.add('active');
+    });
+  });
+
+  document.addEventListener('click', (e) => {
+    if (![...cards].some(card => card.contains(e.target))) {
+      cards.forEach(c => c.classList.remove('active'));
+    }
+  });
+});
+
+
+
+
 wow.init();
+
+
+

@@ -2217,3 +2217,110 @@ responsive
     padding: 30px;
   }
 }
+
+.pyramid-container {
+  display: flex;
+  flex-wrap: nowrap; /* Keep in single row */
+  justify-content: center;
+  align-items: flex-start;
+  gap: 1.5rem;
+  padding: 2rem 1rem;
+  overflow: hidden; /* Hide scroll bar */
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+/* Pricing Card */
+.pricing-card {
+  background: #fff;
+  border-radius: 20px;
+  padding: 1.5rem;
+  width: 18%; /* Fits 5 cards in row including gap */
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+  transition: transform 0.4s, z-index 0.4s;
+  position: relative;
+  z-index: 1;
+  cursor: pointer;
+  text-align: center;
+  transform: scale(0.95);
+  flex-shrink: 0;
+}
+
+.pricing-card.center {
+  transform: scale(1);
+  z-index: 2;
+}
+
+.pricing-card:hover {
+  transform: scale(1.05);
+  z-index: 3;
+}
+
+.pricing-card.active {
+  transform: scale(1.2) translateY(-20px);
+  z-index: 10;
+}
+
+/* Content inside card */
+.pricing-card .icon img {
+  width: 60px;
+  margin-bottom: 1rem;
+}
+
+.pricing-card .price {
+  font-size: 1.8rem;
+  color: #333;
+  font-weight: bold;
+}
+
+.pricing-card h4 {
+  font-size: 1rem;
+  margin: 0.5rem 0;
+  color: #555;
+}
+
+.pricing-card ul {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0;
+  font-size: 0.9rem;
+}
+
+.pricing-card ul li {
+  margin-bottom: 0.5rem;
+}
+
+.pricing-card ul li.non-function {
+  text-decoration: line-through;
+  opacity: 0.5;
+}
+
+.border-button a {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  border: 2px solid #333;
+  border-radius: 25px;
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  transition: 0.3s ease;
+}
+
+.border-button a:hover {
+  background: #333;
+  color: #fff;
+}
+
+/* Mobile: Stack cards vertically */
+@media (max-width: 768px) {
+  .pyramid-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .pricing-card {
+    width: 90%;
+    transform: scale(1);
+  }
+}
