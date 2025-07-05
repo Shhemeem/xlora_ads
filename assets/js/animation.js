@@ -212,6 +212,9 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 });
 
+document.addEventListener("DOMContentLoaded", function () {
+  document.querySelector(".js-preloader").classList.add("loaded");
+});
 
 
 
