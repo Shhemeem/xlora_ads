@@ -53,22 +53,37 @@
       }
     };
 
-    document.addEventListener("DOMContentLoaded", function () {
-  const thumbs = document.querySelectorAll(".menu > div");
-  const clients = document.querySelectorAll(".nacc li");
 
-  thumbs.forEach((thumb, index) => {
-    thumb.addEventListener("click", () => {
-      // Remove 'active' class from all
-      thumbs.forEach(t => t.classList.remove("active"));
-      clients.forEach(c => c.classList.remove("active"));
 
-      // Add 'active' class to current
-      thumb.classList.add("active");
-      clients[index].classList.add("active");
+document.addEventListener("DOMContentLoaded", function () {
+  const menuTrigger = document.querySelector(".menu-trigger");
+  const nav = document.querySelector(".main-nav .nav");
+
+  // Toggle nav on menu trigger click
+  menuTrigger.addEventListener("click", function (event) {
+    event.stopPropagation(); // Prevent click from reaching document
+    nav.classList.toggle("active");
+  });
+
+  // Close nav when clicking outside
+  document.addEventListener("click", function (event) {
+    const isClickInsideNav = nav.contains(event.target);
+    const isClickOnTrigger = menuTrigger.contains(event.target);
+
+    if (!isClickInsideNav && !isClickOnTrigger) {
+      nav.classList.remove("active");
+    }
+  });
+
+  // Optional: close nav when clicking a link
+  nav.querySelectorAll("a").forEach(link => {
+    link.addEventListener("click", () => {
+      nav.classList.remove("active");
     });
   });
 });
+
+
 
 
     WOW.prototype.start = function() {
@@ -234,6 +249,24 @@ document.addEventListener("DOMContentLoaded", function () {
   document.querySelector(".js-preloader").classList.add("loaded");
 });
 
+
+
+document.addEventListener("DOMContentLoaded", function () {
+  const thumbs = document.querySelectorAll(".menu > div");
+  const clients = document.querySelectorAll(".nacc li");
+
+  thumbs.forEach((thumb, index) => {
+    thumb.addEventListener("click", () => {
+      // Remove 'active' class from all
+      thumbs.forEach(t => t.classList.remove("active"));
+      clients.forEach(c => c.classList.remove("active"));
+
+      // Add 'active' class to current
+      thumb.classList.add("active");
+      clients[index].classList.add("active");
+    });
+  });
+});
 
 
 wow.init();

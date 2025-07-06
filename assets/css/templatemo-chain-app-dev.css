@@ -926,13 +926,19 @@ Banner Style
   position: relative;
   font-weight: 700;
   line-height: 70px;
-  font-size: 50px;
+  font-size: 48px;
   margin-bottom: 20px;
+  color: #ffffffd2; 
+
+
+
 }
 
 .main-banner .left-content p {
   margin-bottom: 45px;
-  color: #2a2a2a;
+  margin-right: 15px;
+  padding-right: 15px;
+  color: #ffffffb2;
   font-weight: 400;
 }
 
@@ -958,6 +964,15 @@ Banner Style
   background-color: #4b8ef1;
   color: #fff !important;
 }
+
+
+
+
+
+
+
+
+
 
 /* 
 ---------------------------------------------
@@ -2351,7 +2366,7 @@ responsive
 }
 
 button {
-  background: #00bcd4;
+  background: #082948;
   color: white;
   padding: 15px 30px;
   font-size: 16px;
@@ -2362,7 +2377,7 @@ button {
 }
 
 button:hover {
-  background: #0097a7;
+  background: #ff7b00;
 }
 
 .image-section {
@@ -2430,5 +2445,131 @@ button:hover {
 
   button {
     width: 100%;
+  }
+}
+
+
+
+
+
+
+/* Hide nav by default on mobile */
+@media (max-width: 768px) {
+  .main-nav .nav {
+    display: none;
+    flex-direction: column;
+    background-color: #fff;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    right: 0;
+    padding: 20px;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .main-nav .nav.active {
+    display: flex;
+  }
+
+  .menu-trigger {
+    display: block;
+    cursor: pointer;
+  }
+}
+
+/* Hide menu trigger on desktop */
+.menu-trigger {
+  display: none;
+}
+
+/* Hide nav by default on mobile */
+@media (max-width: 768px) {
+  .main-nav .nav {
+    display: none;
+    flex-direction: column;
+    background-color: #fff;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    right: 0;
+    padding: 20px;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .main-nav .nav.active {
+    display: flex;
+  }
+
+  .menu-trigger {
+    display: block;
+    cursor: pointer;
+  }
+}
+
+/* Hide menu trigger on desktop */
+.menu-trigger {
+  display: none;
+}
+
+
+/* Hide nav by default on mobile */
+@media (max-width: 768px) {
+  .main-nav .nav {
+    display: none;
+    flex-direction: column;
+    background-color: #fff;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    right: 0;
+    padding: 20px;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .main-nav .nav.active {
+    display: flex;
+  }
+
+  .menu-trigger {
+    display: block;
+    cursor: pointer;
+  }
+}
+
+/* Hide menu trigger on desktop */
+.menu-trigger {
+  display: none;
+}
+
+
+.menu-trigger {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .menu-trigger {
+    display: block;
+    cursor: pointer;
+    z-index: 1100;
+  }
+
+  .main-nav .nav {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    right: 0;
+    background-color: white;
+    padding: 20px;
+    z-index: 1000;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .main-nav .nav.active {
+    display: flex;
   }
 }
