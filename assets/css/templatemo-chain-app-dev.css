@@ -2371,7 +2371,7 @@ button:hover {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 30px;
+  padding: px;
 }
 
 .image-section img {

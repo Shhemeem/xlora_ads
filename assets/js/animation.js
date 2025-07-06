@@ -53,6 +53,24 @@
       }
     };
 
+    document.addEventListener("DOMContentLoaded", function () {
+  const thumbs = document.querySelectorAll(".menu > div");
+  const clients = document.querySelectorAll(".nacc li");
+
+  thumbs.forEach((thumb, index) => {
+    thumb.addEventListener("click", () => {
+      // Remove 'active' class from all
+      thumbs.forEach(t => t.classList.remove("active"));
+      clients.forEach(c => c.classList.remove("active"));
+
+      // Add 'active' class to current
+      thumb.classList.add("active");
+      clients[index].classList.add("active");
+    });
+  });
+});
+
+
     WOW.prototype.start = function() {
       var box, _i, _len, _ref;
       this.boxes = this.element.getElementsByClassName(this.config.boxClass);
