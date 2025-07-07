@@ -264,7 +264,7 @@ body {
 .border-button a {
   display: inline-block !important;
   padding: 10px 20px !important;
-  color: #4b8ef1 !important;
+  color: #082948 !important;
   border: 1px solid #0267f5;
   text-transform: capitalize;
   font-size: 15px;
@@ -1410,7 +1410,7 @@ The Clients
 }
 
 .pricing-item-regular ul li {
-  color: #4b8ef1;
+  color: #082948;
   font-size: 15px;
   margin-bottom: 15px;
 }
@@ -1487,7 +1487,7 @@ The Clients
 }
 
 .pricing-item-pro ul li {
-  color: #4b8ef1;
+  color: #082948;
   font-size: 15px;
   margin-bottom: 15px;
 }
@@ -1590,16 +1590,18 @@ The Clients
   display: inline-block;
   margin-top: 1rem;
   padding: 0.5rem 1rem;
-  border: 2px solid #333;
+  border: 2px solid #082948;
   border-radius: 25px;
   text-decoration: none;
   color: #333;
   font-weight: bold;
   transition: 0.3s ease;
+  color: #083661;
+  
 }
 
 .border-button a:hover {
-  background: #333;
+  background: #082948;
   color: #fff;
 }
 
@@ -2410,7 +2412,7 @@ button:hover {
 
 .form-section, .image-section {
   flex: 1 1 100%; /* Full width on small screens */
-  padding: 30px;
+  padding: 40px;
   box-sizing: border-box;
 }
 
@@ -2419,6 +2421,9 @@ button:hover {
   .form-section, .image-section {
     flex: 1 1 50%;
   }
+}
+.image-section {
+  background-image: url(../images/contact2.png);
 }
 
 .input-group input,
