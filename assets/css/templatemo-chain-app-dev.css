@@ -1175,7 +1175,7 @@ About Us
 }
 
 .about-us:after {
-  /* background-image: url(../images/about-bg.jpg); */
+  background-image: url(../images/about-bg\ 1.jpg);
   width: 777px;
   height: 1132px;
   content: '';
