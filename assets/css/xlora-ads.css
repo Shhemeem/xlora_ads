@@ -187,7 +187,7 @@ body {
 
 .section-heading h4 em {
   font-style: normal;
-  color: #f68820;
+  color: #fe0101;
 }
 
 .section-heading img {
@@ -258,7 +258,7 @@ body {
 .gradient-button a:hover {
   color: #ffffff !important;
   background: rgb(255, 255, 255);
-  background: linear-gradient(105deg, #f68820 100%);
+  background: linear-gradient(105deg, #fe0101 100%);
 }
 
 .border-button a {
@@ -317,7 +317,7 @@ header
   position: absolute;
   width: 100%;
   height: 1px;
-  background-color: #f68820;
+  background-color: #fe0101;
   content: '';
   left: 50%;
   bottom: -20px;
@@ -408,14 +408,14 @@ header
 .background-header .main-nav .nav li:last-child a:hover,
 .header-area .main-nav .nav li:nth-child(6) a:hover ,
 .background-header .main-nav .nav li:nth-child(6) a:hover {
-  color: #082948 !important;
+  color: #000000 !important;
 }
 
 .header-area .main-nav .nav li a {
   display: block;
   font-weight: 500;
   font-size: 15px;
-  color: #082948;
+  color: #000000;
   text-transform: capitalize;
   -webkit-transition: all 0.3s ease 0s;
   -moz-transition: all 0.3s ease 0s;
@@ -429,7 +429,7 @@ header
 
 .header-area .main-nav .nav li:hover a,
 .header-area .main-nav .nav li a.active {
-  color: #f68820!important;
+  color: #fe0101!important;
 }
 
 .header-area .main-nav .nav li:last-child a.active {
@@ -438,7 +438,7 @@ header
 
 .background-header .main-nav .nav li:hover a,
 .background-header .main-nav .nav li a.active {
-  color: #f68820!important;
+  color: #fe0101!important;
   opacity: 1;
 }
 
@@ -857,7 +857,7 @@ preloader
     height: 16px;
     top: 12px;
     left: 15px;
-    background: #082948;
+    background: #fe0101;
     border-radius: 50%;
     -webkit-transform: translateX(0);
     transform: translateX(0);
@@ -880,7 +880,7 @@ preloader
     width: 16px;
     height: 16px;
     margin-left: 16px;
-    background: #f68820;
+    background: #fe0101;
     border-radius: 50%;
 }
 
@@ -961,7 +961,7 @@ Banner Style
 }
 
 .main-banner .left-content .white-button a {
-  background-color: #4b8ef1;
+  background-color: #ffffff;
   color: #fff !important;
 }
 
@@ -1156,7 +1156,7 @@ About Us
 }
 
 .about-us .box-item:hover h4 a {
-  color: #f68820;
+  color: #fe0101;
 }
 
 .about-us .gradient-button {
@@ -1252,7 +1252,7 @@ The Clients
 .the-clients .naccs .menu div.active i,
 .the-clients .naccs .menu div.active span.rating,
 .the-clients .naccs .menu div.active .thumb {
-  color: #082948;
+  color: #fe0101;
 }
 
 .the-clients ul.nacc {
@@ -1791,7 +1791,7 @@ footer .copyright-text p {
 }
 
 footer p a {
-  color: #f68820;
+  color: #fe0101;
   transition: all .5s;
 }
 
